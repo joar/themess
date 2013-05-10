@@ -1,0 +1,85 @@
+body {
+    background: black;
+    color: whiteSmoke;
+    font-family: 'Noto Serif', serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    color: white;
+}
+
+footer.footer {
+    padding: 18px 0px;
+    margin: 18px 0px;
+    background: rgba(0, 0, 0, .2);
+}
+
+.hero .hero-title {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    bottom: 100px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', 'Roboto Slab', serif;
+    letter-spacing: -.20em;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .hero .hero-title {
+        font-size: 50px;
+        bottom: 50px;
+    }
+}
+
+.hero {
+    position: relative;
+}
+
+.team {
+    text-transform: uppercase;
+}
+
+.team .nav-pills > li {
+    float: none;
+    width: auto;
+}
+.team .nav-pills li {
+    font-size: 20px;
+}
+/* Portrait tablets and down */
+@media (max-width: 768px) {
+    .team .nav-pills li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .team .nav-pills li {
+        font-size: 20px;
+        display: block;
+    }
+}
+
+.team .nav > li > a:hover, .team .nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .2s;
+    text-shadow: 0 0 20px rgba(178, 178, 255, 1);
+}
+
+hr {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #222;
+}
+/* Centered pills: */
+
+.centered-pills { text-align: center; }
+.centered-pills ul.nav-pills { display: block; }
+.centered-pills li { display: inline; }
+.centered-pills .nav > li > a { display: inline-block; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
