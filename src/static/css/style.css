@@ -71,6 +71,10 @@ footer.footer {
     text-shadow: 0 0 20px rgba(178, 178, 255, 1);
 }
 
+.contact {
+    text-align: center;
+}
+
 hr {
     border-top: 1px solid #111;
     border-bottom: 1px solid #222;
